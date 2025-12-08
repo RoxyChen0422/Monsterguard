@@ -1,0 +1,223 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Unity projects\\Monsterguard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|e:\\unity projects\\monsterguard\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\towermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\towermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\tower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\basictower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\basictower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\storemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\storemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\pathingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pathingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|E:\\Unity projects\\Monsterguard\\assets\\scripts\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38A2A5E9-C00F-964A-C076-D19A7535555B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mapmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MapManager.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\MapManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MapManager.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\MapManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MapManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:54:19.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PathingService.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\PathingService.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PathingService.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\PathingService.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PathingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:54:52.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAIA+wJUAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:55:45.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAADgv2QAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:18:03.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WaveManager.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\WaveManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WaveManager.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\WaveManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WaveManager.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAEYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:38:12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StoreManager.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\StoreManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StoreManager.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\StoreManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StoreManager.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIA4wBEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:55:22.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EnemyManager.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\EnemyManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyManager.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\EnemyManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:49:02.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBcAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:53:16.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TowerManager.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\TowerManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TowerManager.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\TowerManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TowerManager.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:50:14.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BasicTower.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\BasicTower.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BasicTower.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\BasicTower.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BasicTower.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA4wAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:52:43.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Projectile.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\Projectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Projectile.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\Projectile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Projectile.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T11:42:23.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tower.cs",
+              "DocumentMoniker": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\Tower.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tower.cs",
+              "ToolTip": "E:\\Unity projects\\Monsterguard\\Assets\\Scripts\\Tower.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tower.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAowAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T10:51:34.146Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
