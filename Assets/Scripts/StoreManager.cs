@@ -24,6 +24,7 @@ public class StoreManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null && Instance != this) Destroy(this.gameObject);
         Instance = this;
     }
 
@@ -64,15 +65,20 @@ public class StoreManager : MonoBehaviour
     }
     public void GenerateStoreItems()
     {
+        float[] possibleMultipliers = new float[] { 0.1f, 0.3f, 0.5f,0.7f, 0.9f };
+        int randomIndex = UnityEngine.Random.Range(0, possibleMultipliers.Length);
         itemsForSale.Clear();
-        for (int i = 0; i < 3; i++)
+        int i = 0;
+        while (i < 3)
         {
             UpgradeItem item = new UpgradeItem();
             item.targetTower = (TowerType)UnityEngine.Random.Range(0, 3);
             item.upgradeType = (UpgradeType)UnityEngine.Random.Range(0, 3);
-            item.multiplier = 0.1f;
-            item.cost = 50 + (i * 20);
-            item.itemName = $"{item.targetTower} {item.upgradeType} +10%";
+            item.multiplier = possibleMultipliers[randomIndex];
+            item.cost = 50 + (int)(item.multiplier * 1000);
+            item.itemName = $"{item.targetTower} {item.upgradeType} +{item.multiplier * 100}%";
+            if( itemsForSale.Exists(x => x.itemName == item.itemName)) continue;
+            i++;
             itemsForSale.Add(item);
         }
         UIManager.Instance.UpdateStoreUI(itemsForSale);

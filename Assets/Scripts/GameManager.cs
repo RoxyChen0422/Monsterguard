@@ -43,6 +43,7 @@ public enum UpgradeType
 
 public class GameManager : MonoBehaviour
 {
+    private Difficulty currentDifficulty;
     public static GameManager Instance { get; private set; }
 
     [Header("Game Status")]
@@ -108,7 +109,7 @@ public class GameManager : MonoBehaviour
         uiManager.UpdateLivesUI(Lives);
         if (Lives <= 0)
         {
-            EndGame(false);
+            EndGame(false);//show defeat
         }
     }
 
@@ -131,6 +132,12 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         // Reload scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+    }
+    public void QuitToMenu()
+    {
+        Time.timeScale = 1;
+        CurrentState = GameState.Menu;
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 }
