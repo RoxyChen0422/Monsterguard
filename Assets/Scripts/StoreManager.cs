@@ -65,12 +65,12 @@ public class StoreManager : MonoBehaviour
     }
     public void GenerateStoreItems()
     {
-        float[] possibleMultipliers = new float[] { 0.1f, 0.3f, 0.5f,0.7f, 0.9f };
-        int randomIndex = UnityEngine.Random.Range(0, possibleMultipliers.Length);
+        float[] possibleMultipliers = new float[] { 0.1f, 0.3f, 0.5f, 0.7f, 0.9f };
         itemsForSale.Clear();
         int i = 0;
         while (i < 3)
         {
+            int randomIndex = UnityEngine.Random.Range(0, possibleMultipliers.Length);
             UpgradeItem item = new UpgradeItem();
             item.targetTower = (TowerType)UnityEngine.Random.Range(0, 3);
             item.upgradeType = (UpgradeType)UnityEngine.Random.Range(0, 3);

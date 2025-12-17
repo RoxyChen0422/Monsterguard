@@ -18,6 +18,14 @@ public class WaveManager : MonoBehaviour
     private int currentWaveIndex = 0;
     private bool isWaveInProgress = false;
 
+    private void Awake()
+    {
+        // 每次场景加载，新的 WaveManager 都会把自己注册给 GameManager
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.waveManager = this;
+        }
+    }
     public EnemyManager enemyManager;
 
     public void InitializeWaves(Difficulty difficulty)

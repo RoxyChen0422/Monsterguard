@@ -63,9 +63,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-
+        Instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
@@ -127,17 +125,5 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = GameSpeed;
         }
-    }
-
-    public void RestartGame()
-    {
-        // Reload scene
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
-    }
-    public void QuitToMenu()
-    {
-        Time.timeScale = 1;
-        CurrentState = GameState.Menu;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 }

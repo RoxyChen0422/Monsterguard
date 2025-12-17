@@ -41,12 +41,35 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
+        // Standard Singleton logic
         if (Instance != null && Instance != this)
         {
             Destroy(this.gameObject);
             return; 
         }
         Instance = this;
+
+        // Re-link the immortal GameManager to this NEW UI
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.uiManager = this;
+            
+            // IF we are restarting (State is Running), ensure panels are hidden
+            if (GameManager.Instance.CurrentState == GameState.Running)
+            {
+                // Force hide the store and show the HUD
+                storePanel.SetActive(false);
+                pausePanel.SetActive(false);
+                menuPanel.SetActive(false);
+                gameHUD.SetActive(true);
+                
+                // Re-sync the numbers
+                UpdateLivesUI(GameManager.Instance.Lives);
+                UpdateResourceUI(StoreManager.Instance.CurrentCoins);
+            }
+        }
+
+        // Your dictionary logic...
         spriteMap = new Dictionary<TowerType, Sprite>();
         foreach (var mapping in towerSprites)
         {
@@ -204,7 +227,7 @@ public class UIManager : MonoBehaviour
         else
         { 
             pausePanel.SetActive(false);
-            GameManager.Instance.ResumeGame(); 
+            //GameManager.Instance.ResumeGame(); 
             }
     }
 
@@ -226,6 +249,9 @@ public class UIManager : MonoBehaviour
 
     public void OnOpenStoreClicked() => ToggleStore(true);
     public void OnCloseStoreClicked() => ToggleStore(false);
+    public void OnRestartClicked() => ShowGameHUD();
 
-    public void OnRestartClicked() => GameManager.Instance.RestartGame();
+
+    public void OnQuitToMenuClicked() => GameManager.Instance.QuitToMenu();
+
 }
