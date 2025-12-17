@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum GameState
 {
@@ -43,6 +44,7 @@ public enum UpgradeType
 
 public class GameManager : MonoBehaviour
 {
+    private Difficulty currentDifficulty;
     public static GameManager Instance { get; private set; }
 
     [Header("Game Status")]
@@ -62,9 +64,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-
+        Instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
@@ -102,13 +102,35 @@ public class GameManager : MonoBehaviour
         uiManager.TogglePauseMenu(false);
     }
 
+    public void RestartGame()
+    {
+        towerManager.ClearAllTowers();
+        waveManager.CleanAllEnemies();
+        Lives = 20;
+        storeManager.CurrentCoins = 100;
+        StartGame(SelectedDifficulty);
+        ResumeGame();
+    }
+
+    public void QuitToMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        /*towerManager.ClearAllTowers();
+        waveManager.CleanAllEnemies();
+        Lives = 20;
+        storeManager.CurrentCoins = 100;
+        Time.timeScale = 0;
+        CurrentState = GameState.Menu;
+        uiManager.ShowMenuScreen();*/
+    }
+
     public void ReduceLives(int amount)
     {
         Lives -= amount;
         uiManager.UpdateLivesUI(Lives);
         if (Lives <= 0)
         {
-            EndGame(false);
+            EndGame(false);//show defeat
         }
     }
 
@@ -126,11 +148,5 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = GameSpeed;
         }
-    }
-
-    public void RestartGame()
-    {
-        // Reload scene
-        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 }

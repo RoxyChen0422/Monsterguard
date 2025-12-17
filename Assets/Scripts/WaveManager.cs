@@ -18,6 +18,14 @@ public class WaveManager : MonoBehaviour
     private int currentWaveIndex = 0;
     private bool isWaveInProgress = false;
 
+    private void Awake()
+    {
+        // 每次场景加载，新的 WaveManager 都会把自己注册给 GameManager
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.waveManager = this;
+        }
+    }
     public EnemyManager enemyManager;
 
     public void InitializeWaves(Difficulty difficulty)
@@ -59,6 +67,7 @@ public class WaveManager : MonoBehaviour
     private IEnumerator SpawnWaveRoutine(Wave wave)
     {
         isWaveInProgress = true;
+        Debug.Log($"Spawn interval: {wave.spawnInterval}");
         for (int i = 0; i < wave.count; i++)
         {
             if (GameManager.Instance.CurrentState != GameState.Running) yield break;
@@ -80,5 +89,10 @@ public class WaveManager : MonoBehaviour
     {
         yield return new WaitUntil(() => enemyManager.activeEnemies.Count == 0);
         GameManager.Instance.EndGame(true);
+    }
+
+    public void CleanAllEnemies()
+    {
+        enemyManager.ClearAllEnemies();
     }
 }

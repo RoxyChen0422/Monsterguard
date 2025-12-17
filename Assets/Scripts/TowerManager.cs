@@ -78,6 +78,16 @@ public class TowerManager : MonoBehaviour
         }
     }
 
+    public void ClearAllTowers()
+    {
+        foreach (var tower in activeTowers.Values)
+        {
+            Destroy(tower.gameObject);
+            Destroy(tower);
+        }
+        activeTowers.Clear();
+    }
+
     private GameObject GetPrefabByType(TowerType type)
     {
         switch (type)

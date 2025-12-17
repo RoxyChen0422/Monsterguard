@@ -5,6 +5,12 @@ using System;
 
 public abstract class Tower : MonoBehaviour
 {
+    [Header("Visuals (4 Directions)")]
+    public SpriteRenderer towerRenderer;
+    public Sprite frontLeft;  // 敌人在左下 (Enemy X < Tower X, Enemy Y < Tower Y)
+    public Sprite frontRight; // 敌人在右下 (Enemy X > Tower X, Enemy Y < Tower Y)
+    public Sprite backLeft;   // 敌人在左上 (Enemy X < Tower X, Enemy Y > Tower Y)
+    public Sprite backRight;  // 敌人在右上 (Enemy X > Tower X, Enemy Y > Tower Y)
     [Header("Base Attributes")]
     public int id;
     public TowerType type;
@@ -70,12 +76,35 @@ public abstract class Tower : MonoBehaviour
         if (!isOperational || GameManager.Instance.CurrentState != GameState.Running) return;
 
         AcquireTarget();
-
+        UpdateVisualDirection();
         fireTimer -= Time.deltaTime;
         if (target != null && fireTimer <= 0)
         {
             Fire();
             fireTimer = 1f / currentFireRate;
+        }
+    }
+    protected void UpdateVisualDirection()
+    {
+        if (target == null || towerRenderer == null) return;
+
+        Vector3 enemyPos = target.transform.position;
+        Vector3 towerPos = transform.position;
+
+        // 核心逻辑：对比坐标
+        if (enemyPos.y >= towerPos.y) // 敌人在上方区域
+        {
+            if (enemyPos.x >= towerPos.x)
+                towerRenderer.sprite = backRight; // 右上 (你说的 x,y 都更大)
+            else
+                towerRenderer.sprite = backLeft;  // 左上
+        }
+        else // 敌人在下方区域
+        {
+            if (enemyPos.x >= towerPos.x)
+                towerRenderer.sprite = frontRight; // 右下
+            else
+                towerRenderer.sprite = frontLeft;  // 左下
         }
     }
 
@@ -106,7 +135,8 @@ public abstract class Tower : MonoBehaviour
     {
         if (projectilePrefab != null)
         {
-            GameObject projObj = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+            Vector3 spawnPos = transform.position + new Vector3(0, 0.5f, 0);
+            GameObject projObj = Instantiate(projectilePrefab, spawnPos, Quaternion.identity);
             Projectile proj = projObj.GetComponent<Projectile>();
             if (proj) proj.Initialize(target, currentDamage);
         }

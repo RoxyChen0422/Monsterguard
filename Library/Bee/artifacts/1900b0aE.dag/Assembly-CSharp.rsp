@@ -462,6 +462,7 @@
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/EnemyManager.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/ItemScript.cs"
 "Assets/Scripts/MapManager.cs"
 "Assets/Scripts/PathingService.cs"
 "Assets/Scripts/Projectile.cs"

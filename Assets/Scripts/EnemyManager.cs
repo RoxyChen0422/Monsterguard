@@ -19,4 +19,14 @@ public class EnemyManager : MonoBehaviour
     {
         if (activeEnemies.Contains(e)) activeEnemies.Remove(e);
     }
+
+    public void ClearAllEnemies()
+    {
+        foreach (var enemy in activeEnemies)
+        {
+            Destroy(enemy.gameObject);
+            Destroy(enemy);
+        }
+        activeEnemies.Clear();
+    }
 }

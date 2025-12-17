@@ -3,6 +3,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [Header("引用")]
+    public Animator animator; 
+
+    // 这里不再存 Sprite，而是存 AnimationClip
+    public AnimationClip ani1;
+    public AnimationClip ani2;
+    public AnimationClip anitype3;
+
     [Header("Runtime Attributes")]
     public float maxHp;
     public float currentHp;
@@ -19,9 +27,9 @@ public class Enemy : MonoBehaviour
         path = waypoints;
         switch (type)
         {
-            case EnemyType.Type1: maxHp = 10; speed = 1f; coinReward = 1; break;
-            case EnemyType.Type2: maxHp = 10; speed = 1.5f; coinReward = 3; break;
-            case EnemyType.Type3: maxHp = 20; speed = 2.5f; coinReward = 5; break;
+            case EnemyType.Type1: maxHp = 10; speed = 1f; coinReward = 1; animator.Play(ani1.name);break;
+            case EnemyType.Type2: maxHp = 10; speed = 1.5f; coinReward = 3; animator.Play(ani2.name);break;
+            case EnemyType.Type3: maxHp = 20; speed = 2.5f; coinReward = 5; animator.Play(anitype3.name);break;
             default: maxHp = 10; speed = 1f; coinReward = 1; break;
         }
         currentHp = maxHp;
