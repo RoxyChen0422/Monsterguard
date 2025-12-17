@@ -149,4 +149,9 @@ public class GameManager : MonoBehaviour
             Time.timeScale = GameSpeed;
         }
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

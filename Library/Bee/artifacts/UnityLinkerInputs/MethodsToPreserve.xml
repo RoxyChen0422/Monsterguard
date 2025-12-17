@@ -1,0 +1,55 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="GameManager">
+			<method name="Quit"/>
+			<method name="QuitToMenu"/>
+			<method name="RestartGame"/>
+			<method name="ResumeGame"/>
+		</type>
+		<type fullname="UIManager">
+			<method name="OnBuildBasicTower"/>
+			<method name="OnBuildGatlingTower"/>
+			<method name="OnBuildSniperTower"/>
+			<method name="OnCloseStoreClicked"/>
+			<method name="OnNextWaveClicked"/>
+			<method name="OnOpenStoreClicked"/>
+			<method name="OnStartGameEasy"/>
+			<method name="OnStartGameEasy"/>
+			<method name="OnStartGameEasy"/>
+			<method name="OnStartGameHard"/>
+			<method name="OnStartGameMedium"/>
+			<method name="TogglePauseMenu"/>
+		</type>
+	</assembly>
+	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerButton">
+			<method name="OnAction"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerIntField">
+			<method name="OnDecrement"/>
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+			<method name="OnIncrement"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerObjectPopupField">
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerPanel">
+			<method name="OnScrollbarClicked"/>
+			<method name="OnScrollbarClicked"/>
+			<method name="ResetDebugManager"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerUIntField">
+			<method name="OnDecrement"/>
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+			<method name="OnIncrement"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.Behaviour">
+			<method name="set_enabled"/>
+		</type>
+	</assembly>
+</linker>
